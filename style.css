@@ -87,3 +87,36 @@
 #sec::after{
 	content: "SEC";
 }
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+	.hero h1 {
+		font-size: 8vw;  /* Adjust font size for smaller screens */
+	}
+
+	.container {
+		width: 90%;  /* Make container wider on mobile */
+		height: auto;  /* Allow the container to adjust based on content */
+	}
+
+	.clock {
+		width: 100%;
+		height: auto;  /* Allow the clock to adjust based on content */
+	}
+
+	.clock span {
+		font-size: 20vw;  /* Increase the font size on small screens */
+		width: 30%;  /* Allow more space for clock segments */
+	}
+}
+
+@media (max-width: 480px) {
+	.hero h1 {
+		font-size: 10vw;  /* Further reduce font size for very small screens */
+	}
+
+	.clock span {
+		font-size: 25vw;  /* Increase font size for small screens */
+		width: 35%;  /* Increase span width */
+	}
+}
